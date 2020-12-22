@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+
+    
+<style>
+
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+
+body{
+    background: url("tour.jpg") center no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+.menu1{
+    width: 75%;
+    height: 100px;
+    margin: 0px auto;
+}
+.menu1 ul{
+    padding: 0px;
+
+}
+.menu1 ul li{
+    float: left;
+    width: 188px;
+    background-color: black;
+    color: white;
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.menu1 ul li ul{
+    display: none;
+
+}
+.menu1 ul li:hover > ul{
+    display: block;
+}
+.menu1 ul li:hover{
+    background-color: #32cd32;
+    opacity: 1;
+}
+
+.menu1 ul li ul li {
+        position: relative;
+}
+.menu1 ul li ul li ul{
+    position: absolute;
+    left:188px;
+    top:0px;
+}
+ 
+</style>
+</head>
+<body>
+    <div class="menu1">
+        <ul>
+            <li>USA
+                <ul>
+                    <li>Newyork</li>
+                </ul>
+            </li>
+            <li>INDIA
+                <ul>
+                    <li>Delhi</li>
+                    <li>Mumbai</li>
+                    <li>Kolkata</li>
+                    <li>Banglore</li>
+                    <li>Allahabad
+                        <ul>
+                            <li>Sangam</li>
+                            <li>Anand Bhawan</li>
+                            <li>Akbar Fort</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>FRANCE
+                <ul>
+                    <li>Paris</li>
+                    <li>Marseille</li>
+                    <li>Lyon</li>
+
+                </ul>
+            </li>
+            <li>AUSTRALIA
+                <ul>
+                    <li>Sydney</li>
+                    <li>Perth</li>
+                </ul>
+            </li>
+            <li>BRAZIL
+                <ul>
+                    <li>Portirico</li>
+                    <li>Reo De Jenerio</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
